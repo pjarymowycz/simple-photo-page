@@ -1,0 +1,93 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  color: rgba(0,0,64,0.9);
+  margin: 2em;
+  text-align: center;
+  background-image: linear-gradient(rgb(192,208,234),rgb(129,143,165));
+  background-attachment: fixed;
+}
+
+h1 {
+  font-style: italic;
+  font-size: 500%;
+  color: rgba(24,121,206,0.5);
+  text-shadow: 0 0 5px rgb(60,121,206);
+  margin: 0px;
+  transition: color 1s, text-shadow 1s;
+}
+
+h1:hover {
+  color: rgba(24,121,206,0.5);
+  text-shadow: 0 0 0px;
+}
+
+.about {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.pic {
+  position: static;
+  width: 500px;
+  margin: 5px;
+  box-shadow:5px 5px 10px black;
+  transition: width 0.0625s, margin 0.0625s;
+}
+
+.pic:hover {
+  width: 510px;
+  margin: 0px;
+}
+
+.pic-box{
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.pic-link {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 0px;
+  transform: translate(-50%, -50%);
+  transition: width 0.5s;
+}
+
+.pic-link:target {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 75%;
+  transform: translate(-50%, -50%);
+}
+
+.link {
+  font-size: large;
+  font-weight: bold;
+  color: rgba(0,0,64,0.9);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: rgba(0,0,64,0.9);
+  text-decoration: underline;
+}
+
+.link-top {
+  color: rgba(0,0,64,0.9);
+  text-decoration: underline rgba(0,0,64,0.9) dashed;
+}
+
+.link-top:hover {
+  color: rgba(0,0,64,0.9);
+  text-decoration: underline;
+}
+
+.footer {
+  color: silver;
+  font-style: italic;
+  font-size: smaller;
+}
